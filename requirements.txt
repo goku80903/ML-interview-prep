@@ -1,0 +1,9 @@
+flask>=3.0
+
+# Needed only for the questions you actually run:
+# - NumPy questions require: numpy
+# - PyTorch questions require: torch
+#
+# Install what you need, e.g.:
+#   pip install numpy
+#   pip install torch          (see https://pytorch.org/get-started/locally/ for your platform)

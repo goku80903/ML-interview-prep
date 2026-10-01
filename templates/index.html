@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML Interview Practice Runner</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+  <a href="/" id="homeLink" class="brand"><h1>ML Interview Practice Runner</h1></a>
+  <span class="status" id="statusEl">running locally &mdash; real numpy/torch &middot; progress saved to disk</span>
+</header>
+
+<div class="layout">
+  <nav id="nav"></nav>
+  <main id="main"></main>
+</div>
+
+<script id="concepts-data" type="application/json">{{ concepts_json | safe }}</script>
+<script id="study-sections-data" type="application/json">{{ study_sections_json | safe }}</script>
+<script id="study-categories-data" type="application/json">{{ study_categories_json | safe }}</script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
